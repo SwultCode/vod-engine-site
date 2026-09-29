@@ -11,14 +11,37 @@
 <main>
   <header>
     <h1>VOD-engine</h1>
-    <p class="lede">A private, self-hosted tool that uploads videos to its owner's YouTube channel.</p>
+    <p class="lede">A self-hosted tool for preparing a streamer's past broadcasts and uploading them to a VOD channel on YouTube.</p>
   </header>
 
-  <p>It is used only by its owner. There are no other users and no sign-ups.</p>
+  <h2>Who uses it</h2>
+  <p>VOD-engine is run privately by a VOD channel manager on their own server. It is not a public service and
+     has no sign-ups. The only people who interact with it are that operator and the owners of the channels
+     it uploads to, who each connect their own channel themselves.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Takes the streamer's own recording of a livestream, compresses it, trims it to the part meant for the
+        VOD channel, and helps the operator remove copyrighted music.</li>
+    <li>With the channel owner's permission, uploads the result to that channel as a <strong>private</strong>
+        video. It never publishes videos: the operator reviews each upload in YouTube Studio and publishes it
+        by hand.</li>
+    <li>Reads the connected channel's name, to make sure it is uploading to the right channel.</li>
+    <li>Deletes older private drafts <em>that it uploaded itself</em> when a corrected version replaces them.</li>
+  </ul>
+
+  <h2>YouTube API Services</h2>
+  <p>VOD-engine uses the YouTube API Services. By connecting a channel you agree to the
+     <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and to VOD-engine's
+     <a href="terms.html">Terms of Use</a>. See the <a href="privacy.html">Privacy Policy</a> for exactly what data
+     it accesses and stores, and the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.
+     You can revoke its access at any time in your
+     <a href="https://security.google.com/settings/security/permissions">Google security settings</a>.</p>
 
   <footer>
     <a href="privacy.html">Privacy policy</a>
-    <a href="https://github.com/SwultCode/vod-engine-site/issues">Contact</a>
+    <a href="terms.html">Terms of use</a>
+    <a href="mailto:hi@swalsh.me">Contact: hi@swalsh.me</a>
   </footer>
 </main>
 </body>
