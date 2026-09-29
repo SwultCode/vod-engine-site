@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <meta name="description" content="How VOD-engine handles data from Google, YouTube, Twitch and Discord.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Privacy policy</h1>
+    <p class="meta">VOD-engine · Last updated 29 September 2026</p>
+  </header>
+
+  <p>VOD-engine is self-hosted software used by a single operator to manage the livestream VOD channels they run.
+     It has no public users. This policy explains what it does with data from the services it connects to.</p>
+
+  <h2>YouTube API Services</h2>
+  <p>VOD-engine uses the YouTube API Services. By connecting a YouTube channel to it, you agree to the
+     <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of your data is
+     governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <p>With the access you grant, VOD-engine:</p>
+  <ul>
+    <li>uploads videos to the connected channel as <strong>private</strong> videos, with a title, description and category;</li>
+    <li>reads the channel's name, to show which channel is connected;</li>
+    <li>deletes earlier uploads of the same video that VOD-engine itself made, when a corrected version replaces them.</li>
+  </ul>
+  <p>It does not read, change or delete any other videos, comments, analytics or account information.</p>
+
+  <h2>What is stored</h2>
+  <ul>
+    <li>The OAuth access and refresh tokens for the connected channel, stored in a file on the operator's own computer.</li>
+    <li>The channel name, and the IDs of videos VOD-engine uploaded, in a local database on the same computer.</li>
+  </ul>
+  <p>Nothing is stored on any server run by VOD-engine; there is none.</p>
+
+  <h2>Sharing</h2>
+  <p>Data obtained from Google or YouTube is never sold, never shared with third parties,
+     and never used for advertising or to train AI models.</p>
+  <p>Separately from Google data, VOD-engine uses these services for its own processing:</p>
+  <ul>
+    <li><strong>Twitch</strong>: to read the public title, games and timing of the operator's streams.</li>
+    <li><strong>OpenRouter</strong>: excerpts of the stream's speech transcript (generated locally) are sent to an AI
+        model to find where the intro and outro are. No Google or YouTube data is included.</li>
+    <li><strong>Discord</strong>: status notifications are sent to the operator by direct message.</li>
+  </ul>
+
+  <h2>Revoking access and deleting data</h2>
+  <p>You can revoke VOD-engine's access to your Google account at any time from
+     <a href="https://myaccount.google.com/permissions">Google Account → Third-party apps &amp; services</a>.
+     Disconnecting the channel in VOD-engine, or revoking access, stops all further use; the stored tokens are
+     deleted on request, and are unusable once access is revoked.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be raised by opening an issue at
+     <a href="https://github.com/SwultCode/vod-engine-site/issues">github.com/SwultCode/vod-engine-site</a>.</p>
+
+  <footer>
+    <a href="index.html">Home</a>
+  </footer>
+</main>
+</body>
+</html>
