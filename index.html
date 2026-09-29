@@ -4,33 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VOD-engine</title>
-  <meta name="description" content="VOD-engine is a private tool that prepares recorded livestreams for upload to the owner's YouTube channel.">
+  <meta name="robots" content="noindex">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
   <header>
     <h1>VOD-engine</h1>
-    <p class="lede">A private tool for archiving recorded livestreams and preparing them for YouTube.</p>
+    <p class="lede">A private, self-hosted tool that uploads videos to its owner's YouTube channel.</p>
   </header>
 
-  <p>VOD-engine is self-hosted software run by a single operator for the livestream VOD channels they manage.
-     It is not a public service: there are no sign-ups, and nobody else's account is ever connected to it.</p>
-
-  <h2>What it does</h2>
-  <ul>
-    <li>Picks up new stream recordings from the operator's own storage.</li>
-    <li>Compresses them, trims the intro and outro, and mutes copyrighted music.</li>
-    <li>Fills in the title, description and chapters from the stream's Twitch information.</li>
-    <li>Uploads the result to the operator's YouTube channel as a <strong>private</strong> video,
-        which the operator reviews and publishes by hand in YouTube Studio.</li>
-    <li>Archives a compressed copy back to the operator's storage.</li>
-  </ul>
-
-  <h2>Google and YouTube access</h2>
-  <p>VOD-engine uses the YouTube API Services to upload videos to the connected channel, read the channel's name,
-     and remove earlier uploads of the same video that it made itself.
-     How that data is handled is described in the <a href="privacy.html">privacy policy</a>.</p>
+  <p>It is used only by its owner. There are no other users and no sign-ups.</p>
 
   <footer>
     <a href="privacy.html">Privacy policy</a>
