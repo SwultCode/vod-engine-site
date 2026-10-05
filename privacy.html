@@ -11,7 +11,7 @@
 <main>
   <header>
     <h1>Privacy Policy</h1>
-    <p class="meta">VOD-engine · Last updated 29 September 2026</p>
+    <p class="meta">VOD-engine · Last updated 5 October 2026</p>
   </header>
 
   <p>VOD-engine is a self-hosted tool, run privately by a VOD channel manager (the "operator"), that prepares a
@@ -24,12 +24,12 @@
      described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
 
   <h2>What VOD-engine accesses</h2>
-  <p>When a channel owner connects their channel, they grant VOD-engine these Google permissions:</p>
+  <p>When a channel owner connects their channel, they grant VOD-engine one Google permission:</p>
   <ul>
-    <li><code>https://www.googleapis.com/auth/youtube.upload</code>: to upload videos to the channel;</li>
-    <li><code>https://www.googleapis.com/auth/youtube</code>: to read the channel's name, and to delete private
-        drafts that VOD-engine itself uploaded when a corrected version replaces them. (When the owner connects
-        using a code at google.com/device, Google only offers this permission, and it also covers uploading.)</li>
+    <li><code>https://www.googleapis.com/auth/youtube</code>: to upload videos to the channel, to read the
+        channel's name, and to delete private drafts that VOD-engine itself uploaded when a corrected version
+        replaces them. Narrower YouTube permissions can't do all three: the upload-only permission can't delete
+        videos or read the channel's name.</li>
   </ul>
   <p>Using these, VOD-engine only:</p>
   <ul>
